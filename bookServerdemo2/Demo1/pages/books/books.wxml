@@ -1,0 +1,118 @@
+<!--pages/books/books.wxml-->
+<view class="main-container">
+ <!--沉浸式图书搜索-->
+    <view class="search-container">
+       <view class="books-search-container">
+            <icon type="search" size="18" />
+            <input placeholder="书籍信息" bindblur="changeInput"/>
+        </view>
+    </view>
+     
+    <!--上新新书-->
+    <view style="margin-top: 50px;"></view>
+    <view class="new-card">
+        <view class="tag">新书</view>
+        <view class="title">—— 近期上新图书 ——</view>
+        <view class="bookImg">
+          <image src="http:{{newBookList[0].bookImageBig}}" bindtap="bookDetailBtn" id="{{newBookList[0].bookId}}"/>
+          <image src="http:{{newBookList[1].bookImageBig}}" bindtap="bookDetailBtn" id="{{newBookList[1].bookId}}"/>
+          <image src="http:{{newBookList[2].bookImageBig}}" bindtap="bookDetailBtn" id="{{newBookList[2].bookId}}"/>
+        </view>
+      </view>
+
+<!--热门卡片1-->
+      <view class="hot-card" bindtap="bookDetailBtn" id="{{hotBookList[0].bookId}}">
+        <image src="http:{{hotBookList[0].bookImageBig}}" />
+        <view class="hot-card-right">
+          <view class="tag">热门</view>
+          <text class="title">{{hotBookList[0].bookName}}</text>
+          <text class="author">作者: {{hotBookList[0].bookAuthor}}</text>
+          <text class="classify">分类: {{hotBookList[0].bookClassifyOne}}</text>
+          <text class="press">出版社: {{hotBookList[0].bookPress}}</text>
+          <view class="grade">评分:
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" /> {{hotBookList[0].bookGrade}}
+          </view>
+        </view>
+      </view>
+
+<!--热门卡片2-->
+      <view class="hot-card" bindtap="bookDetailBtn" id="{{hotBookList[1].bookId}}">
+        <image src="http:{{hotBookList[1].bookImageBig}}" />
+        <view class="hot-card-right">
+          <view class="tag">热门</view>
+          <text class="title">{{hotBookList[1].bookName}}</text>
+          <text class="author">作者: {{hotBookList[1].bookAuthor}}</text>
+          <text class="classify">分类: {{hotBookList[1].bookClassifyOne}}</text>
+          <text class="press">出版社: {{hotBookList[1].bookPress}}</text>
+          <view class="grade">评分:
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" /> {{hotBookList[1].bookGrade}}
+          </view>
+        </view>
+      </view>
+
+      <!--热门卡片3-->
+      <view class="hot-card" bindtap="bookDetailBtn" id="{{hotBookList[2].bookId}}">
+        <image src="http:{{hotBookList[2].bookImageBig}}" />
+        <view class="hot-card-right">
+          <view class="tag">热门</view>
+          <text class="title">{{hotBookList[2].bookName}}</text>
+          <text class="author">作者: {{hotBookList[2].bookAuthor}}</text>
+          <text class="classify">分类: {{hotBookList[2].bookClassifyOne}}</text>
+          <text class="press">出版社: {{hotBookList[2].bookPress}}</text>
+          <view class="grade">评分:
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" /> {{hotBookList[2].bookGrade}}
+          </view>
+        </view>
+      </view>
+
+      <!--热门卡片4-->
+      <view class="hot-card" bindtap="bookDetailBtn" id="{{hotBookList[3].bookId}}">
+        <image src="http:{{hotBookList[3].bookImageBig}}" />
+        <view class="hot-card-right">
+          <view class="tag">热门</view>
+          <text class="title">{{hotBookList[3].bookName}}</text>
+          <text class="author">作者: {{hotBookList[3].bookAuthor}}</text>
+          <text class="classify">分类: {{hotBookList[3].bookClassifyOne}}</text>
+          <text class="press">出版社: {{hotBookList[3].bookPress}}</text>
+          <view class="grade">评分:
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" /> {{hotBookList[3].bookGrade}}
+          </view>
+        </view>
+      </view>
+
+<!--热门卡片4-->
+      <view class="hot-card" bindtap="bookDetailBtn" id="{{hotBookList[4].bookId}}">
+        <image src="http:{{hotBookList[4].bookImageBig}}" />
+        <view class="hot-card-right">
+          <view class="tag">热门</view>
+          <text class="title">{{hotBookList[4].bookName}}</text>
+          <text class="author">作者: {{hotBookList[4].bookAuthor}}</text>
+          <text class="classify">分类: {{hotBookList[4].bookClassifyOne}}</text>
+          <text class="press">出版社: {{hotBookList[4].bookPress}}</text>
+          <view class="grade">评分:
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" />
+            <image src="/images/main/star_1.png" /> {{hotBookList[4].bookGrade}}
+          </view>
+        </view>
+      </view>
+
+</view>

@@ -1,0 +1,163 @@
+/* pages/books/books.wxss */
+page {
+  background-color: #fff;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 沉浸式图书搜索样式 */
+.search-container {
+  background: #4db6ac;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+}
+
+.books-search-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+  height: 60rpx;
+}
+.books-search-container icon {
+  background-color: #fff;
+  padding: 15rpx;
+  border-radius: 5px 0px 0px 5px;
+  float: left;
+}
+.books-search-container input {
+  width: 200px;
+  height: 60rpx;
+  background: #fff;
+  border-radius: 0px 5px 5px 0px;
+}
+/* 沉浸式图书搜索样式end */
+
+/* 新书卡片 */
+
+.new-card {
+  width: 95%;
+  height: 180px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.new-card .tag {
+  border-radius: 5rpx;
+  width: 35px;
+  height: 16px;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 18px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid #9fa8da;
+  color: #9fa8da;
+  align-self: flex-end;
+}
+
+.new-card .title {
+  width: 100%;
+  display: block;
+  margin-left: 5px;
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  color: #666;
+}
+
+.new-card .bookImg {
+  display: flex;
+  flex-direction: row;
+}
+
+.new-card .bookImg image {
+  width: 200rpx;
+  height: 100px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+/* 新书卡片end */
+
+/* 热门卡片样式 */
+
+.hot-card{
+  width: 95%;
+  height: 140px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hot-card image {
+  width: 200rpx;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.hot-card-right {
+  width: 70%;
+  height: 140px;
+  float: right
+}
+
+.hot-card-right .tag {
+  border-radius: 5rpx;
+  width: 35px;
+  height: 16px;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 18px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid #ffb74d;
+  color: #ffb74d;
+}
+
+.hot-card-right .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+}
+
+.hot-card-right .author {
+  display: block;
+  font-size: 26rpx;
+  margin-top: 8px;
+  color: #999;
+}
+
+.hot-card-right .classify {
+  display: block;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.hot-card-right .press {
+  display: block;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.hot-card-right image {
+  width: 10px;
+  height: 10px;
+}
+
+/* 热门和推荐卡片样式end */

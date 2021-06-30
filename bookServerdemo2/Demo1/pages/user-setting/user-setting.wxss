@@ -1,0 +1,69 @@
+/* pages/user-setting/user-setting.wxss */
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.usernameSetting {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 32rpx;
+}
+
+.usernameSetting text {
+  line-height: 1.7em;
+}
+
+.usernameSetting input {
+  float: right;
+  border-bottom: 1px solid #cfcfcf;
+  width: 50%;
+}
+
+.checkboxSetting {
+  margin-top: 40px;
+  font-size: 32rpx;
+}
+
+.checkboxSetting label {
+  line-height: 2em;
+}
+
+.checkboxSetting checkbox {
+  float: right;
+}
+
+button::after {
+  border: 0;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  text-align: center;
+  justify-content: center;
+}
+
+#cancelBtn {
+  background-color: #eeeeee;
+  margin-top: 200rpx;
+  color: #4db6ac;
+  line-height: 80rpx;
+  border: 1px solid #4db6ac;
+  border-radius: 5px;
+}
+
+#saveBtn {
+  background-color: #4db6ac;
+  margin-top: 200rpx;
+  color: #fff;
+  line-height: 80rpx;
+  border: 1px solid #4db6ac;
+  border-radius: 5px;
+}
+
+.wx-checkbox-input-checked::before {
+  color: #4db6ac;
+}

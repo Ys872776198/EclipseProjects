@@ -1,0 +1,13 @@
+<!--pages/user-borrow/user-borrow.wxml-->
+<view class="main-container">
+
+    <view class="card" wx:for="{{borrowList}}" wx:for-item="borrow">
+        <view style="margin-top:10px;"></view>
+        <view wx:if="{{borrow.borrowStatus == 1}}">阅读的图书：《{{borrow.book.bookName}}》</view> 
+        <view>所属类别：{{borrow.book.bookClassifyOne}}</view>
+        <view wx:if="{{borrow.borrowStatus != -1}}">阅读时间：{{borrow.borrowStartTime}}</view>
+    </view>
+
+    <view wx:if="{{borrowList == 0}}" style="color:#666; font-size:32rpx; text-align:center; margin-top:100px;">暂无记录</view>
+
+</view>

@@ -1,0 +1,27 @@
+<!--pages/main/mian.wxml-->
+<!--  view组件:相当于html中的div标签（块区间） -->
+<!--  text组件:相当于HTML中的span标签-->
+<!--  bindtap为按键监听 specialOffBtn和specialOnBtn为激发不同按键所调用的函数-->
+<view class="main-container">
+
+    <view class="special-off-container" wx:if="{{specialOn == true}}">
+
+    <view class="special-card" style="background: url('http://localhost:8090/book/apiPhoto//ideal.png') center center; background-size: cover;" data-name="理想" bindtap="specialBtn">
+    </view>
+
+    <view class="special-card" style="background: url('http://localhost:8090/book/apiPhoto/warmth.png') center center; background-size: cover;" data-name="温暖" bindtap="specialBtn">
+    </view>
+
+    <view class="special-card" style="background: url('http://localhost:8090/book/apiPhoto/technology.png') center center; background-size: cover;" data-name="科技" bindtap="specialBtn">
+    </view>
+
+    <view class="special-card" style="background: url('http://localhost:8090/book/apiPhoto/history.png') center center; background-size: cover;" data-name="历史" bindtap="specialBtn">
+    </view>
+
+    <view class="special-card" style="background: url('http://localhost:8090/book/apiPhoto/emotion.png') center center; background-size: cover;" data-name="情感" bindtap="specialBtn">
+    </view>
+
+  </view>
+
+
+</view>

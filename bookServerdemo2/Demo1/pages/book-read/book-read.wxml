@@ -1,0 +1,20 @@
+<!--pages/book-read/book-read.wxml-->
+<view class="container">
+    <text>暂无资源！</text>
+     <!-- <button class="exitBtn" bindtap="exitBtnOnClick" >返回</button> -->
+</view>
+
+<!-- <view class="main-conainer">
+
+    <view class="title">{{title}}</view>
+    
+    <progress 
+        percent="100"
+        stroke-width="5"
+        color="#4db6ac"
+        active="true"
+        wx:if="{{progress}}"/>
+    
+    <view>{{read}}</view>
+
+</view> -->

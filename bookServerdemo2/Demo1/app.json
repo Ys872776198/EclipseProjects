@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/mian",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/books/books",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/books-search/books-search",
+    "pages/book-detail/book-detail",
+    "pages/book-read/book-read",
+    "pages/books-list/books-list",
+    "pages/user-borrow/user-borrow",
+    "pages/user-history/user-history",
+    "pages/user-setting/user-setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4db6ac",
+    "navigationBarTitleText": "小木屋",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectgroundcolor": "#4db6ac",
+    "backgroundcolor": "#feca49",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "书库",
+        "pagePath": "pages/books/books",
+        "iconPath": "./images/tabBar/books_0.png",
+        "selectedIconPath": "./images/tabBar/books_1.png"
+      },
+      {
+        "text": "专题",
+        "pagePath": "pages/main/mian",
+        "iconPath": "./images/tabBar/main_0.png",
+        "selectedIconPath": "./images/tabBar/main_1.png"
+      },
+      {
+        "text": "用户",
+        "pagePath": "pages/user/user",
+        "iconPath": "./images/tabBar/user_0.png",
+        "selectedIconPath": "./images/tabBar/user_1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

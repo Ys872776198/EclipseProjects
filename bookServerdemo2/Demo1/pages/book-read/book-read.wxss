@@ -1,0 +1,46 @@
+/* pages/book-read/book-read.wxss */
+/* page {
+  width: 100%;
+}
+
+.exitBtn {
+  background-color: #4db6ac;
+  margin-top: 200rpx;
+  color: #fff;
+  line-height: 50rpx;
+  border: 1px solid #4db6ac;
+  border-radius: 5px;
+} */
+.main-container {
+  width: 100%;
+  float: left;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #333;
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+progress {
+  width: 80%;
+  padding-top: 200px;
+  margin: 0 auto;
+}
+
+image {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  display: block;
+}
+
+.error {
+font-size: 36rpx;
+color: #333;
+margin-top: 200px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
